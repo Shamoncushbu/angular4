@@ -1,0 +1,12 @@
+<p>Heroes:</p>
+<ul>
+  <!--(click)="onSelect(hero)"-->
+  <li *ngFor="let hero of heroes" >
+    <a   [routerLink]="['/detail', hero.id]"  class="col-1-4">
+      {{ hero.name }}
+    </a>
+  </li>
+</ul>
+
+
+<!--<hero-detail [hero]="selectedHero"></hero-detail>-->
